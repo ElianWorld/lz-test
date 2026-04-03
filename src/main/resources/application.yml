@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: quant-stock-platform
+  datasource:
+    url: jdbc:h2:mem:quant;MODE=MYSQL;DATABASE_TO_LOWER=TRUE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+  h2:
+    console:
+      enabled: true
+
+server:
+  port: 8080
+
+quant:
+  refresh-ms: 5000
